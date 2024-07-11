@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Refresh</title>
+    <script>
+        // Função para recarregar a página após 10 segundos (10000 milissegundos)
+        function autoRefresh() {
+            setTimeout(function() {
+                location.reload();
+            }, 10000); // 10000 milissegundos = 10 segundos
+        }
+        // Chama a função de auto refresh quando a página é carregada
+        window.onload = autoRefresh;
+    </script>
+</head>
+<body>
+    <h1>Conteúdo da Página</h1>
+    <p>Esta página será atualizada automaticamente a cada 10 segundos.</p>
+</body>
+</html>
